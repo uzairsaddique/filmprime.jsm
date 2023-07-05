@@ -4,7 +4,7 @@ import React from 'react';
 import { CssBasicLine } from '@mui/icons-material';
 import { Route, Routes } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
-import { Actorinformation, MovieInformation, Navbar, Movies , Profile } from './Compoments/Fileimport';
+import { Actorinformation, MovieInformation, Navbar, Movies , Profile , Sidebar } from './Compoments/Fileimport';
 import Home from './Compoments/Home';
 import useStyles from './styles'
 
