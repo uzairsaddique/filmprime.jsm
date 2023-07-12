@@ -9,6 +9,7 @@ import Home from './Compoments/Home';
 import useStyles from './styles'
 
 
+
 const  App = ()=> {
   const classes = useStyles();
   return (
@@ -18,8 +19,8 @@ const  App = ()=> {
     <main className={classes.content}>
     <div className={classes.toolbar}/>
     <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/movies" exact element={<Movies />} /> 
+        {/* <Route path="/" exact element={<Home />} /> */}
+        <Route path="/" exact element={<Movies />} /> 
         <Route path="/Actorinformation" exact element={<Actorinformation />} />
         <Route path="/MovieInformation" exact element={<MovieInformation />} />
         <Route path="/profile" exact element={<Profile/>} />

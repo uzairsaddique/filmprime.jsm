@@ -9,19 +9,17 @@ const blueLogo = 'https://fontmeme.com/permalink/210930/6854ae5c7f76597cf8680e48
 
 
 const Catagories = [
-    {lable: 'Popular', value : 'Popular'},
-    {lable: 'TopRated', value : 'TopRated'},
-    {lable: 'upcoming', value : 'upcoming'},
-    {lable: 'Popular', value : 'Popular'},
-    {lable: 'Popular', value : 'Popular'},
+    { lable: 'Popular', value: 'Popular' },
+    { lable: 'TopRated', value: 'TopRated' },
+    { lable: 'upcoming', value: 'upcoming' },
 
 ]
 const demoCatagories = [
-    {lable: 'Conmdy', value : 'Conmdy'},
-    {lable: 'Action', value : 'Action'},
-    {lable: 'Horror', value : 'Horror'},
-    {lable: 'Drema', value : 'Drema'},
-    {lable: 'Animation', value : 'Animation'},
+    { lable: 'Conmdy', value: 'Conmdy' },
+    { lable: 'Action', value: 'Action' },
+    { lable: 'Horror', value: 'Horror' },
+    { lable: 'Drema', value: 'Drema' },
+    { lable: 'Animation', value: 'Animation' },
 
 ]
 const Sidebar = ({ setMobileOpen }) => {
@@ -35,31 +33,31 @@ const Sidebar = ({ setMobileOpen }) => {
                     alt='Filmpirmw logo'
                 />
             </Link>
-            <Divider/>
+            <Divider />
             <List>
                 <ListSubheader>Catagories</ListSubheader>
                 {
-                    demoCatagories.map(({lable , value})=>(
+                    demoCatagories.map(({ lable, value }) => (
 
-                        <Link key={value} className={classes.links} to= '/'>
-                        <ListItem onClick={()=>{}}>
-                            <ListItemText primary={lable}/>
-                        </ListItem>
+                        <Link key={value} className={classes.links} to='/'>
+                            <ListItem onClick={() => { }}>
+                                <ListItemText primary={lable} />
+                            </ListItem>
 
                         </Link>
                     ))
                 }
             </List>
-            <Divider/>
+            <Divider />
             <List>
                 <ListSubheader>Genres</ListSubheader>
                 {
-                    Catagories.map(({lable , value})=>(
+                    Catagories.map(({ lable, value }) => (
 
-                        <Link key={value} className={classes.links} to= '/'>
-                        <ListItem onClick={()=>{}}>
-                        <ListItemText primary={lable}/>
-                        </ListItem>
+                        <Link key={value} className={classes.links} to='/'>
+                            <ListItem onClick={() => { }}>
+                                <ListItemText primary={lable} />
+                            </ListItem>
 
                         </Link>
                     ))

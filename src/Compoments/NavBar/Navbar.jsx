@@ -22,7 +22,7 @@ const Navbar = () => {
               <Menu />
             </IconButton>
           )}
-          <IconButton color='inherit' SX={{ ml: 1 }} onClick={() => { }}>
+          <IconButton color='inherit' sx={{ ml: 1 }} onClick={() => { }}>
             {theme.palette.mode == 'derk' ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
           {!isMoble && 'Search ...'}
